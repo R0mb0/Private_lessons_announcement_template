@@ -1,0 +1,124 @@
+%============================== Setting teh Document=============================================
+
+\documentclass[aspectratio=169]{beamer}
+\usepackage[english]{babel} 
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usetheme{AnnArbor}
+\usepackage{multicol}
+\usepackage[pscoord]{eso-pic}
+\usepackage{tikz}
+%==========================Set the foot line========================================================
+\makeatletter
+
+\setbeamercolor*{author in head/foot}{parent=palette tertiary}
+\setbeamercolor*{title in head/foot}{parent=palette primary}
+\setbeamercolor*{date in head/foot}{parent=palette primary}
+
+\setbeamercolor*{section in head/foot}{parent=palette tertiary}
+\setbeamercolor*{subsection in head/foot}{parent=palette primary}
+% colors for the external link field
+\setbeamercolor*{LinkToIndex}{parent=palette tertiary}
+
+\defbeamertemplate*{footline}{}
+{
+	\leavevmode
+	\hbox{
+		\begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+			\usebeamerfont{author in head/foot} Tel
+		\end{beamercolorbox}%
+	
+		\begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}
+			\usebeamerfont{author in head/foot}Phone Number
+		\end{beamercolorbox}%
+	
+	% this is a new field with an external link
+	    \begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{LinkToIndex}%
+	    	\usebeamerfont{author in head/foot}\centering{\href{mailto:f.rombaldoni@campus.uniurb.it}{f.rombaldoni@campus.uniurb.it}}\hspace*{2ex}
+    	\end{beamercolorbox}%
+
+		\begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{date in head/foot}%
+			\usebeamerfont{date in head/foot}\centering{Francesco Rombaldoni}\hspace*{2em}
+		\end{beamercolorbox}}%	
+
+	\vskip0pt%
+}
+\setbeamersize{text margin left=1em,text margin right=1em}
+\makeatother
+
+\AddToShipoutPictureFG{
+	\put(\LenToUnit{.885\paperwidth},
+	\LenToUnit{.24\paperheight})
+	{\vtop{{\null}
+			\makebox{\begin{tikzpicture}
+					\clip (0,0) circle (6mm) node {\includegraphics[width=22mm]{Imgs/temp}};
+		\end{tikzpicture}}}}}
+
+\setbeamercovered{dynamic}
+
+\title{Offerta Di Ripetizioni} 
+\author{Francesco Rombaldoni} 
+
+%===========================================Document starting===============================================
+\begin{document}
+
+\section{Something}
+\setbeamertemplate{navigation symbols}{}
+\begin{frame}[t]{\textbf{Private Lessons Announcement}}
+	
+	\mbox{
+	\colorbox{gray!20}{\begin{minipage}[t][0.8\textheight][t]
+			{\dimexpr0.4\textwidth-2\fboxsep-2\fboxrule-5pt\relax}
+			\centering{Private Lessons Announcemen text...}
+	\end{minipage}}
+		\colorbox{gray!20}{\begin{minipage}[t][0.8\textheight][t]
+			{\dimexpr0.4\textwidth-2\fboxsep-2\fboxrule-5pt\relax}
+		\textbf{Scientific Subject:}
+		\begin{multicols}{2}
+		\begin{itemize}
+		\item Math
+		\item Geometry
+		\item Physics
+		\item Science
+		\end{itemize}
+		\end{multicols}
+		\textbf{Programming Languages:}
+		\begin{multicols}{2}
+		\begin{itemize}
+			\item C
+			\item C++
+			\item C\#
+			\item Java
+			\item Prolog
+			\item Haskell
+			\item Python
+			\item \LaTeX
+			\item MarkDown
+			\item HTML
+			\item CSS
+		\end{itemize}
+		\end{multicols}
+	\end{minipage}}
+
+
+\colorbox{gray!20}{\begin{minipage}[t][0.8\textheight][t]
+		{\dimexpr0.22\textwidth-2\fboxsep-2\fboxrule-5pt\relax}
+		\centering{\textbf{Contact me on WhatsApp}}
+			\begin{figure}
+			\centering
+			\includegraphics[width=0.5\textwidth]{Imgs/WhatsApp-QR-code}
+		\end{figure}
+		\centering{\textbf{Contact me on Telegram}}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.5\textwidth]{Imgs/WhatsApp-QR-code}
+	\end{figure}
+	\end{minipage}}
+}
+
+
+\end{frame}
+
+\end{document}
