@@ -11,55 +11,38 @@
 \usepackage[pscoord]{eso-pic}
 \usepackage{tikz}
 %==========================Set the foot line========================================================
-\makeatletter
 
 \setbeamercolor*{author in head/foot}{parent=palette tertiary}
 \setbeamercolor*{title in head/foot}{parent=palette primary}
 \setbeamercolor*{date in head/foot}{parent=palette primary}
 
-\setbeamercolor*{section in head/foot}{parent=palette tertiary}
-\setbeamercolor*{subsection in head/foot}{parent=palette primary}
-% colors for the external link field
-\setbeamercolor*{LinkToIndex}{parent=palette tertiary}
-
 \defbeamertemplate*{footline}{}
 {
 	\leavevmode
-	\hbox{
+	\hbox{%
 		\begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
-			\usebeamerfont{author in head/foot} Tel
+			\usebeamerfont{author in head/foot}\centering{Telephone Number}
 		\end{beamercolorbox}%
 	
 		\begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}
-			\usebeamerfont{author in head/foot}Phone Number
+			\usebeamerfont{title in head/foot}\centering{Mobile Number}
 		\end{beamercolorbox}%
 	
-	% this is a new field with an external link
-	    \begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{LinkToIndex}%
-	    	\usebeamerfont{author in head/foot}\centering{\href{mailto:f.rombaldoni@campus.uniurb.it}{f.rombaldoni@campus.uniurb.it}}\hspace*{2ex}
-    	\end{beamercolorbox}%
+	        \begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{LinkToIndex}%
+	   	 	\usebeamerfont{author in head/foot}\centering{\href{mailto:f.rombaldoni@campus.uniurb.it}{f.rombaldoni@campus.uniurb.it}}				\hspace*{2ex}
+    	        \end{beamercolorbox}%
 
 		\begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{date in head/foot}%
 			\usebeamerfont{date in head/foot}\centering{Francesco Rombaldoni}\hspace*{2em}
-		\end{beamercolorbox}}%	
-
-	\vskip0pt%
+		\end{beamercolorbox}}%
 }
-\setbeamersize{text margin left=1em,text margin right=1em}
-\makeatother
-
 \AddToShipoutPictureFG{
 	\put(\LenToUnit{.885\paperwidth},
 	\LenToUnit{.24\paperheight})
 	{\vtop{{\null}
-			\makebox{\begin{tikzpicture}
-					\clip (0,0) circle (6mm) node {\includegraphics[width=22mm]{Imgs/temp}};
-		\end{tikzpicture}}}}}
-
-\setbeamercovered{dynamic}
-
-\title{Offerta Di Ripetizioni} 
-\author{Francesco Rombaldoni} 
+	\makebox{\begin{tikzpicture}
+	\clip (0,0) circle (6mm) node {\includegraphics[width=22mm]{Imgs/temp}};
+	\end{tikzpicture}}}}} 
 
 %===========================================Document starting===============================================
 \begin{document}
