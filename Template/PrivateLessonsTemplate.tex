@@ -21,18 +21,22 @@
 	\leavevmode
 	\hbox{%
 		\begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+			% << Add Telephone Number >>
 			\usebeamerfont{author in head/foot}\centering{Telephone Number}
 		\end{beamercolorbox}%
 	
 		\begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}
+			% << Add Mobile Number >>
 			\usebeamerfont{title in head/foot}\centering{Mobile Number}
 		\end{beamercolorbox}%
 	
 	        \begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
-	   	 	\usebeamerfont{author in head/foot}\centering{\href{mailto:f.rombaldoni@campus.uniurb.it}{f.rombaldoni@campus.uniurb.it}}
-    	        \end{beamercolorbox}%
+	        	% << Replace with your email address >> 
+	   	 		\usebeamerfont{author in head/foot}\centering{\href{mailto:f.rombaldoni@campus.uniurb.it}{f.rombaldoni@campus.uniurb.it}}
+    	    \end{beamercolorbox}%
 
 		\begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{date in head/foot}%
+			% << Replace with your name >>
 			\usebeamerfont{date in head/foot}\centering{Francesco Rombaldoni}\hspace*{2em}
 		\end{beamercolorbox}}%
 }
@@ -41,23 +45,29 @@
 	\LenToUnit{.25\paperheight})
 	{\vtop{{\null}
 	\makebox{\begin{tikzpicture}
-	\clip (0,0) circle (6mm) node {\includegraphics[width=22mm]{Imgs/temp}};
+	% << Replace with your personal image >>
+	\clip (0,0) circle (6mm) node {\includegraphics[width=22mm]{Images/temp}};
 	\end{tikzpicture}}}}} 
 
 %===========================================Document starting===============================================
 \begin{document}
 
+% << First line of text to change >>
 \section{Something}
 \setbeamertemplate{navigation symbols}{}
+% << Change the title >>
 \begin{frame}[t]{\textbf{Private Lessons Announcement}}
 	
 	\mbox{
 	\colorbox{gray!20}{\begin{minipage}[t][0.8\textheight][t]
 			{\dimexpr0.4\textwidth-2\fboxsep-2\fboxrule-5pt\relax}
+			% << Replace the description part >>
 			\centering{Private Lessons Announcemen text...}
+			% << End description part >>
 	\end{minipage}}
 		\colorbox{gray!20}{\begin{minipage}[t][0.8\textheight][t]
 			{\dimexpr0.4\textwidth-2\fboxsep-2\fboxrule-5pt\relax}
+			% << Change here the school subjects part >>
 		\textbf{Scientific Subject:}
 		\begin{multicols}{2}
 		\begin{itemize}
@@ -83,24 +93,28 @@
 			\item CSS
 		\end{itemize}
 		\end{multicols}
+		% << End school subjects part >>
 	\end{minipage}}
 
 
 \colorbox{gray!20}{\begin{minipage}[t][0.8\textheight][t]
 		{\dimexpr0.22\textwidth-2\fboxsep-2\fboxrule-5pt\relax}
+		% << Change WhatsApp contact >>
 		\centering{\textbf{Contact me on WhatsApp}}
 			\begin{figure}
 			\centering
-			\includegraphics[width=0.5\textwidth]{Imgs/WhatsApp-QR-code}
+			% << Here replace WhatsApp qr-code image >>
+			\includegraphics[width=0.5\textwidth]{Images/WhatsApp-QR-code}
 		\end{figure}
+			% << Change Telegram contact >>
 		\centering{\textbf{Contact me on Telegram}}
 	\begin{figure}
 		\centering
-		\includegraphics[width=0.5\textwidth]{Imgs/WhatsApp-QR-code}
+		% << Here replace Telegram qr-code image >>
+		\includegraphics[width=0.5\textwidth]{Images/WhatsApp-QR-code}
 	\end{figure}
 	\end{minipage}}
 }
-
 
 \end{frame}
 
