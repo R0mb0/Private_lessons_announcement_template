@@ -13,9 +13,9 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           working_directory: Template
-          root_file: Private_Lessons_Template.tex
+          root_file: PrivateLessonsTemplate.tex
       - name: Upload compiled file
         uses: actions/upload-artifact@v4
         with: 
           name: Private_Lessons_Template
-          path: Template/Private_Lessons_Template.pdf
+          path: Template/PrivateLessonsTemplate.pdf
