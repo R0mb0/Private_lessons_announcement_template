@@ -5,6 +5,7 @@
 [![Compilation_Test](https://github.com/R0mb0/Private_lessons_announcement_template/actions/workflows/Compilation_Test.yml/badge.svg)](https://github.com/R0mb0/Private_lessons_announcement_template/actions/workflows/Compilation_Test.yml)
 
 ## Demo image:
+
 - ![AnnArbor:](ReadMeImgs/AnnArbor.png)
 
 ---
@@ -30,6 +31,7 @@
 ---
 
 ## License
+
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 This work is licensed under a
