@@ -15,7 +15,7 @@ jobs:
           working_directory: Template
           root_file: PrivateLessonsTemplate.tex
       - name: Upload compiled file
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with: 
           name: Private_Lessons_Template
           path: Template/PrivateLessonsTemplate.pdf
